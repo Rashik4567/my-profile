@@ -1,0 +1,158 @@
+#hero {
+    height: 100vh;
+    align-items: center;
+    background-color: rgba(61, 61, 61, 0.877);
+    overflow: hidden;
+}
+
+.hs {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.hs .right .imgcircle {
+    box-shadow: 1px 1px 15px 5px yellowgreen;
+    margin: auto;
+    max-width: 450px;
+    border-radius: 50%;
+}
+
+
+.hs .right .imgcircle img{
+    border-radius: 50%; 
+    width: 100%; 
+}
+
+
+.hs .left h3 {
+    font-size: 25px;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 1px;
+}
+
+.hs .left h1 {
+    font-size: 45px;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding-bottom: 2px;
+}
+
+.hs .left h1 span {
+    color: yellowgreen;
+    border-bottom: 3px solid white;
+    letter-spacing: 1px;
+}
+
+.triangle {
+    position: absolute;
+}
+
+.t {
+    top: 10vh;
+    left: 20%;
+    transform: rotate(150deg);
+    color: rgba(76, 157, 172, 0.692);
+    animation: tri3 infinite 3s;
+
+}
+
+.t1 {
+    top: 80vh;
+    left: 80%;
+    color: aqua;
+    transform: rotate(30deg);
+    animation: tri2 infinite 8s;
+
+}
+
+.t2 {
+    top: 70vh;
+    color: aquamarine;
+    left: 5%;
+    transform: rotate(250deg);
+    animation: tri2 infinite 5s;
+
+}
+
+
+.rectangle {
+    position: absolute;
+}
+
+.r {
+    top: 70vh;
+    left: 30%;
+    color: aquamarine;
+    opacity: 0.7;
+    animation: rectengle2 infinite 5s;
+
+}
+
+.r1 {
+    top: 30vh;
+    left: 40%;
+    color: aqua;
+    opacity: 0.8;
+    transform: rotate(100deg);
+    animation: rectengle1 infinite 8s;
+}
+
+.r2 {
+    top: 5vh;
+    transform: rotate(30deg);
+    left: 80%;
+    color: aqua;
+    opacity: 0.5;
+    animation: rectengle3 infinite 3s;
+
+}
+
+
+@keyframes rectengle1 {
+    from {transform: rotate(100deg);}
+    to {transform: rotate(460deg);}
+}
+@keyframes rectengle2 {
+    from {transform: rotate(-100deg);}
+    to {transform: rotate(-460deg);}
+}
+@keyframes rectengle3 {
+    from {transform: rotate(30deg);}
+    to {transform: rotate(390deg);}
+}
+@keyframes tri1 {
+    from {transform: rotate(-30deg);}
+    to {transform: rotate(-390deg);}
+}
+@keyframes tri2 {
+    from {transform: rotate(30deg);}
+    to {transform: rotate(390deg);}
+}
+@keyframes tri3 {
+    from {transform: rotate(-30deg);}
+    to {transform: rotate(-390deg);}
+}
+
+
+
+
+
+@media  screen and (max-width: 800px) {
+    .hs {
+        display: block;
+    }
+
+    .triangle {
+        display: none;
+    }
+
+    .rectangle {
+        display: none;
+    }
+}
