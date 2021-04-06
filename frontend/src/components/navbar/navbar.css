@@ -1,155 +1,147 @@
 header {
-    position: fixed;
-    align-items: center;
-    top: 30vh;
-    right: 30px;
-    /* background-color: rgba(77, 74, 74, 0.842); */
-    border:  none;
-    /* opacity: 0.8; */
-    border-radius: 10px;
-    transition: 0.5s;
-    /* border: 1px solid #000; */
+  position: fixed;
+  align-items: center;
+  top: 30vh;
+  right: 30px;
+  /* background-color: rgba(77, 74, 74, 0.842); */
+  border: none;
+  /* opacity: 0.8; */
+  border-radius: 10px;
+  transition: 0.5s;
+  /* border: 1px solid #000; */
 }
 
 header a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .name {
-    transition: 0.5s;
-    text-decoration: none;
-    color: yellowgreen;
+  transition: 0.5s;
+  text-decoration: none;
+  color: yellowgreen;
 }
 
 .logo {
-    transition: 0.5s;
-    display: none;
+  transition: 0.5s;
+  display: none;
 }
 
 .navitem {
-    transition: 0.5s;
-    margin-left: 5px;
-    margin-right: 10px;
-    display: flex;
-    width: 100%;
-    align-items: center;
+  transition: 0.5s;
+  margin-left: 5px;
+  margin-right: 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
 }
 
-
 .hic {
-    transition: 0.5s;
-    height: 15px;
-    width: 15px;
-    border: 2px solid greenyellow;
-    border-radius: 50%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 10px;
+  transition: 0.5s;
+  height: 15px;
+  width: 15px;
+  border: 2px solid greenyellow;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 10px;
 }
 
 .active .hic {
-    transition: 0.5s;
-    background-color: yellowgreen;
+  transition: 0.5s;
+  background-color: yellowgreen;
 }
 
-
 .sticky {
-    /* border: 1px solid black; */
-    opacity: 0.7;
-    transition: 0.5s;
-    border-radius: 60px;
-    background-color: rgba(77, 74, 74, 0.842);
+  /* border: 1px solid black; */
+  opacity: 0.7;
+  transition: 0.5s;
+  border-radius: 60px;
+  background-color: rgba(77, 74, 74, 0.842);
 }
 
 .sticky:hover {
-    opacity: 1;
-    border-radius: 15px;
-    transition: 0.5s;
+  opacity: 1;
+  border-radius: 15px;
+  transition: 0.5s;
 }
-
-
 
 .sticky .name {
-    transition: 0.5s;
-    display: none;
+  transition: 0.5s;
+  display: none;
 }
 
-.sticky:hover .name{
-    display: block;
-    transition: 0.5s;
+.sticky:hover .name {
+  display: block;
+  transition: 0.5s;
 }
 
 .sticky .logo {
-    transition: 0.5s;
-    display: none;
+  transition: 0.5s;
+  display: none;
 }
 
 .sticky .navitem {
-    transition: 0.5s;
-    justify-content: center;
+  transition: 0.5s;
+  justify-content: center;
 }
 
-.sticky:hover .navitem{
-    justify-content: start;
-    transition: 0.5s;
+.sticky:hover .navitem {
+  justify-content: start;
+  transition: 0.5s;
 }
-
 
 .hic:hover {
-    transition: 0.5s;
-    background-color: yellowgreen;
+  transition: 0.5s;
+  background-color: yellowgreen;
 }
 
-
-@media  screen and (max-width: 999px) {
-    header{
-        right: 0;
-    }
+@media screen and (max-width: 999px) {
+  header {
+    right: 0;
+  }
 }
 
-
-@media  screen and (max-width: 800px) {
-    
-header {
+@media screen and (max-width: 800px) {
+  header {
     /* border: 1px solid black; */
     opacity: 0.7;
     transition: 0.5s;
     border-radius: 60px;
     background-color: rgba(77, 74, 74, 0.842);
-}
+  }
 
-header:hover {
+  header:hover {
     opacity: 1;
     border-radius: 15px;
     transition: 0.5s;
-}
+  }
 
-
-
-header .name {
+  header .name {
     transition: 0.5s;
     display: none;
-}
+  }
 
-header:hover .name{
+  header:hover .name {
     display: block;
     transition: 0.5s;
-}
+  }
 
-header .logo {
+  header .logo {
     transition: 0.5s;
     display: none;
-}
+  }
 
-header .navitem {
+  header .navitem {
     transition: 0.5s;
     justify-content: center;
-}
+  }
 
-header:hover .navitem{
+  header:hover .navitem {
     justify-content: start;
     transition: 0.5s;
+  }
 }
 
-
+.name {
+  cursor: pointer;
 }

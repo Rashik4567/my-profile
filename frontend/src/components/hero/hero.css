@@ -1,7 +1,14 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 #hero {
     height: 100vh;
     align-items: center;
-    background-color: rgba(61, 61, 61, 0.877);
+    background-color: transparent;
     overflow: hidden;
 }
 
@@ -41,11 +48,12 @@
     color: white;
     font-family: 'Noto Sans JP', sans-serif;
     padding-bottom: 2px;
+    word-spacing: 5px;
 }
 
 .hs .left h1 span {
     color: yellowgreen;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid yellowgreen;
     letter-spacing: 1px;
 }
 
@@ -144,15 +152,34 @@
 
 
 @media  screen and (max-width: 800px) {
+    
+    #hero {
+        background: #000;
+    }
+
     .hs {
         display: block;
+        align-items: center;
     }
 
-    .triangle {
+    .herobackground {
         display: none;
     }
 
-    .rectangle {
+    .herotop {
         display: none;
     }
+
+    .left {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .right{margin-bottom: 50px;margin-top: 50px;}
+}
+
+
+.herobackground {
+    position: fixed;
+    z-index: -1;
+    overflow: hidden;
 }

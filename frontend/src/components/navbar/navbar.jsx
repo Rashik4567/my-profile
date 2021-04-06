@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./navbar.css";
 
+import { Link } from "react-scroll";
+
 class Navbar extends Component {
   constructor(props) {
     super();
@@ -19,72 +21,70 @@ class Navbar extends Component {
     const items = document.querySelectorAll(".navitem");
 
     window.addEventListener("scroll", function () {
-      let current = '';
-      secs.forEach(section => {
+      let current = "";
+      secs.forEach((section) => {
         const sectop = section.offsetTop;
         const secheight = section.clientHeight;
 
         if (window.pageYOffset >= sectop - secheight / 3) {
           // console.log(section.getAttribute('id'));
-          current = section.getAttribute('id');
+          current = section.getAttribute("id");
         }
-
-      })
+      });
       items.forEach((li) => {
         li.classList.remove("active");
         if (li.classList.contains(current)) {
           li.classList.add("active");
         }
-      })
-     })
-
+      });
+    });
   }
 
   onscrollnav() {
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
       var header = document.querySelector("header");
       header.classList.toggle("sticky", window.scrollY > 0);
-    })
+    });
   }
 
   render() {
     return (
       <header>
-        <a href="#hero">
+        <Link to="hero" smooth={true} duration={500}>
           <div className="navitem hero active">
             <div className="hic"></div>
             <div className="logo"></div>
             <p className="name">Home</p>
           </div>
-        </a>
-        <a href="#exp">
-          <div className="navitem exp">
+        </Link>
+        <Link to="about" smooth={true} duration={500}>
+          <div className="navitem about">
             <div className="hic"></div>
             <div className="logo"></div>
-            <p className="name">Experience</p>
+            <p className="name">About</p>
           </div>
-        </a>
-        <a href="#skill">
+        </Link>
+        <Link to="skill" smooth={true} duration={500}>
           <div className="navitem skill">
             <div className="hic"></div>
             <div className="logo"></div>
             <p className="name">Skills</p>
           </div>
-        </a>
-        <a href="#portfolio">
+        </Link>
+        <Link to="portfolio" smooth={true} duration={500}>
           <div className="navitem portfolio">
             <div className="hic"></div>
             <div className="logo"></div>
             <p className="name">Portfolio</p>
           </div>
-        </a>
-        <a href="#contact">
+        </Link>
+        <Link to="contact" smooth={true} duration={500}>
           <div className="navitem contact">
             <div className="hic"></div>
             <div className="logo"></div>
             <p className="name">Contact</p>
           </div>
-        </a>
+        </Link>
       </header>
     );
   }

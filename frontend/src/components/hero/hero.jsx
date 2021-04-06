@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./hero.css";
 import img from "../../assets/images/hero.png";
+import Glow from "../glowing/glow"
 
 class Hero extends Component {
   constructor(props) {
@@ -10,6 +11,16 @@ class Hero extends Component {
   render() {
     return (
       <section id="hero">
+
+        
+
+        <div className="herobackground">
+          <Glow />
+          
+        </div>
+
+        <div className="herotop">
+        
         <div className="triangle t">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -83,6 +94,11 @@ class Hero extends Component {
             <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
           </svg>
         </div>
+        </div>
+
+
+
+        
 
         <div className="hs">
           <div className="left">

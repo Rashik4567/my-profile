@@ -1,0 +1,60 @@
+#about {
+    height: 100vh;
+    background: transparent;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.title {
+    font-size: 28px;
+    color: yellowgreen;
+    margin-bottom: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 2px;
+}
+
+.title h1 {
+    width: 250px;
+    margin: auto;
+    border-bottom: 3px solid yellowgreen;
+    border-radius: 10px;
+}
+
+.quote{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+
+    color: yellowgreen;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.quote h1 {
+    font-style: italic;
+}
+
+.author h3{
+    text-transform: capitalize;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.mainabout {
+    padding-top: 10vh;
+    height: 70vh;
+    margin: auto;
+    text-align: left;
+    width: 80%;
+}
+
+.imtext{
+    font-size: large;
+    color: yellowgreen;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-family: 'Kiwi Maru', serif;
+}
